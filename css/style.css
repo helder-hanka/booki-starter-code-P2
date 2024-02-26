@@ -7,6 +7,8 @@
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
+  --black-color: #000000;
+  --grey-tint2--: #d9d9d9;
 }
 
 .fa-solid {
@@ -22,7 +24,7 @@ body {
 
 .main-container {
   width: 100%;
-  /*
+  /* 
   max-width: 1440px;
   padding: 0 50px;*/
   box-sizing: border-box;
@@ -90,6 +92,85 @@ a {
   border-top: 4px solid var(--main-color);
   color: var(--main-color);
   padding-top: 26px;
+}
+
+/****** filter search ***********/
+.search-container {
+  border: 1px solid var(--main-bg-color);
+  display: flex;
+  width: 377px;
+}
+.input-icon {
+  background-color: var(--main-bg-color);
+}
+.input-icon i {
+  font-size: 20px;
+  padding: 20px;
+  color: var(--black-color);
+}
+.input-icon {
+  border-radius: 15px 0 0 15px;
+  background-color: var(--main-bg-color);
+}
+.input-text {
+  border-radius: 0 15px 15px 0;
+  padding: 1px 16px;
+  color: var(--main-bg-color);
+  font-weight: 700;
+}
+.input-text {
+  background-color: var(--main-color);
+}
+
+input[type="search"] {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+}
+
+.filter-container div:nth-child(n + 2) {
+  border: 2px solid var(--main-bg-color);
+  padding: 15px 19px;
+  border-radius: 25px;
+}
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 15px 10px;
+  flex-wrap: wrap;
+}
+.filter-container span {
+  font-weight: 700;
+  font-size: 17px;
+  /* padding-left: 10px; */
+}
+
+.filter-container span:nth-child(2) {
+  padding-left: 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+.info div {
+  border: 1px solid var(--grey-tint2--);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.info div i {
+  align-self: center;
+}
+.search-container,
+.filter-container,
+.info {
+  margin-top: 35px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -232,5 +313,9 @@ a {
     width: 100%;
     margin-bottom: 30px;
     padding-bottom: 15px;
+  }
+
+  .filter {
+    /* flex-basis: 50%; */
   }
 }
