@@ -7,8 +7,6 @@
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
-  --black-color: #000000;
-  --grey-tint2--: #d9d9d9;
 }
 
 .fa-solid {
@@ -18,15 +16,12 @@
 body {
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 0;
 }
 
 .main-container {
   width: 100%;
-  /* 
   max-width: 1440px;
-  padding: 0 50px;*/
+  padding: 0 50px;
   box-sizing: border-box;
 }
 
@@ -82,7 +77,7 @@ a {
 .container-menu {
   height: 79px;
   display: flex;
-  margin-top: 30px;
+  margin-top: 22px;
 }
 .container-menu:nth-child(n + 2) {
   gap: 36px;
@@ -92,85 +87,6 @@ a {
   border-top: 4px solid var(--main-color);
   color: var(--main-color);
   padding-top: 26px;
-}
-
-/****** filter search ***********/
-.search-container {
-  border: 1px solid var(--main-bg-color);
-  display: flex;
-  width: 377px;
-}
-.input-icon {
-  background-color: var(--main-bg-color);
-}
-.input-icon i {
-  font-size: 20px;
-  padding: 20px;
-  color: var(--black-color);
-}
-.input-icon {
-  border-radius: 15px 0 0 15px;
-  background-color: var(--main-bg-color);
-}
-.input-text {
-  border-radius: 0 15px 15px 0;
-  padding: 1px 16px;
-  color: var(--main-bg-color);
-  font-weight: 700;
-}
-.input-text {
-  background-color: var(--main-color);
-}
-
-input[type="search"] {
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  border: none;
-}
-
-.filter-container div:nth-child(n + 2) {
-  border: 2px solid var(--main-bg-color);
-  padding: 15px 19px;
-  border-radius: 25px;
-}
-.filter-container {
-  display: flex;
-  align-items: center;
-  gap: 15px 10px;
-  flex-wrap: wrap;
-}
-.filter-container span {
-  font-weight: 700;
-  font-size: 17px;
-  /* padding-left: 10px; */
-}
-
-.filter-container span:nth-child(2) {
-  padding-left: 10px;
-}
-
-.info {
-  display: flex;
-  align-items: center;
-}
-.info div {
-  border: 1px solid var(--grey-tint2--);
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-}
-.info div i {
-  align-self: center;
-}
-.search-container,
-.filter-container,
-.info {
-  margin-top: 35px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -275,47 +191,5 @@ input[type="search"] {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /*.main-container {
-    padding: 0;
-  }*/
-  .hebergements-and-populaires section {
-    border-radius: 0;
-  }
-  .hebergements {
-    background-color: var(--main-bg-color);
-  }
-  .populaires-cards {
-    display: block;
-  }
-  .container-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  .container-menu {
-    width: 100%;
-    justify-content: space-around;
-
-    flex: 1;
-    align-items: center;
-    text-align: center;
-  }
-
-  .container-menu > *:hover {
-    border-bottom: 4px solid var(--main-color);
-  }
-  .container-menu a:hover {
-    border-top: 0px;
-  }
-  .container-menu:nth-child(n + 2) {
-    gap: 0;
-  }
-  .container-menu > * {
-    width: 100%;
-    margin-bottom: 30px;
-    padding-bottom: 15px;
-  }
-
-  .filter {
-    /* flex-basis: 50%; */
-  }
+  /* ... */
 }
