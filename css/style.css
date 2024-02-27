@@ -89,6 +89,42 @@ a {
   padding-top: 26px;
 }
 
+/****** filter search ***********/
+.search-form {
+  width: 377px;
+  display: flex;
+  border: 1px solid var(--main-bg-color);
+  justify-content: space-between;
+  border-radius: 15px;
+  margin: 35px 0;
+}
+.search-form label {
+  border-radius: 15px 0 0 15px;
+  background-color: var(--main-bg-color);
+}
+.search-form button {
+  border-radius: 0 15px 15px 0;
+  background-color: var(--main-color);
+  color: var(--main-bg-color);
+  font-weight: 700;
+}
+.search-form input {
+  width: 100%;
+  text-align: center;
+}
+.search-form input,
+span {
+  font-size: 18px;
+  font-weight: 700;
+}
+.search-form input,
+button {
+  border: none;
+}
+.search-form button,
+label {
+  padding: 14px 16px;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
