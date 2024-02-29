@@ -162,6 +162,28 @@ label {
 .filter-form div label:hover {
   background-color: var(--filter-bg-color);
 }
+.info {
+  display: flex;
+  align-items: center;
+}
+.info div {
+  border: 1px solid var(--grey-tint2--);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.info div i {
+  align-self: center;
+}
+.search-container,
+.filter-container,
+.info {
+  margin: 20px 0;
+}
 
 /****** Hebergements ***********/
 .hebergements {
