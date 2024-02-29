@@ -159,6 +159,9 @@ label {
   gap: 15px;
   flex-wrap: wrap;
 }
+.filter-form div label:hover {
+  background-color: var(--filter-bg-color);
+}
 
 /****** Hebergements ***********/
 .hebergements {
