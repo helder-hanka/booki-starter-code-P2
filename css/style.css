@@ -142,6 +142,29 @@ label {
 .filter-form span:nth-child(2) {
   padding-left: 10px;
 }
+
+/****** Hebergements à Marseille ***********/
+.hebergements .populaires-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+.hebergements .populaires-cards .card {
+  display: block;
+  height: 250px;
+  width: 250px;
+  margin: 0;
+}
+.hebergements .card img {
+  width: 100%;
+  /* height: 110px; */
+  border-radius: 20px 20px 0 0;
+}
+.hebergements h2 {
+  margin: 30px 0;
+  font-size: 18px;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
@@ -167,7 +190,7 @@ label {
   align-items: center;
 }
 .info div {
-  border: 1px solid var(--grey-tint2--);
+  border: 1px solid var(--grey-tin2-color);
   border-radius: 50%;
   width: 24px;
   height: 24px;
