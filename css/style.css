@@ -7,6 +7,7 @@
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
+  --grey-tin2-color: #d9d9d9;
 }
 
 .fa-solid {
@@ -16,15 +17,12 @@
 body {
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 0;
 }
 
 .main-container {
   width: 100%;
-  /*
   max-width: 1440px;
-  padding: 0 50px;*/
+  padding: 0 50px;
   box-sizing: border-box;
 }
 
@@ -80,7 +78,7 @@ a {
 .container-menu {
   height: 79px;
   display: flex;
-  margin-top: 30px;
+  margin-top: 22px;
 }
 .container-menu:nth-child(n + 2) {
   gap: 36px;
@@ -92,6 +90,81 @@ a {
   padding-top: 26px;
 }
 
+/****** search ***********/
+.search-form {
+  width: 377px;
+  display: flex;
+  border: 1px solid var(--main-bg-color);
+  justify-content: space-between;
+  border-radius: 15px;
+  margin: 35px 0;
+}
+.search-form label {
+  border-radius: 15px 0 0 15px;
+  background-color: var(--main-bg-color);
+}
+.search-form button {
+  border-radius: 0 15px 15px 0;
+  background-color: var(--main-color);
+  color: var(--main-bg-color);
+  font-weight: 700;
+}
+.search-form input {
+  width: 100%;
+  text-align: center;
+}
+.search-form input,
+span {
+  font-size: 18px;
+  font-weight: 700;
+}
+.search-form input,
+button {
+  border: none;
+}
+.search-form button,
+label {
+  padding: 14px 16px;
+}
+/****** filter ***********/
+.filter-form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.filter-form input {
+  display: none;
+}
+.filter-form div label {
+  border: 1px solid var(--grey-tin2-color);
+  border-radius: 25px;
+}
+.filter-form span:nth-child(2) {
+  padding-left: 10px;
+}
+
+/****** Hebergements à Marseille ***********/
+.hebergements .populaires-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+.hebergements .populaires-cards .card {
+  display: block;
+  height: 250px;
+  width: 250px;
+  margin: 0;
+}
+.hebergements .card img {
+  width: 100%;
+  /* height: 110px; */
+  border-radius: 20px 20px 0 0;
+}
+.hebergements h2 {
+  margin: 30px 0;
+  font-size: 18px;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
@@ -103,6 +176,36 @@ a {
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
+}
+.filter-form div {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.filter-form div label:hover {
+  background-color: var(--filter-bg-color);
+}
+.info {
+  display: flex;
+  align-items: center;
+}
+.info div {
+  border: 1px solid var(--grey-tin2-color);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.info div i {
+  align-self: center;
+}
+.search-container,
+.filter-container,
+.info {
+  margin: 20px 0;
 }
 
 /****** Hebergements ***********/
@@ -194,43 +297,5 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /*.main-container {
-    padding: 0;
-  }*/
-  .hebergements-and-populaires section {
-    border-radius: 0;
-  }
-  .hebergements {
-    background-color: var(--main-bg-color);
-  }
-  .populaires-cards {
-    display: block;
-  }
-  .container-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  .container-menu {
-    width: 100%;
-    justify-content: space-around;
-
-    flex: 1;
-    align-items: center;
-    text-align: center;
-  }
-
-  .container-menu > *:hover {
-    border-bottom: 4px solid var(--main-color);
-  }
-  .container-menu a:hover {
-    border-top: 0px;
-  }
-  .container-menu:nth-child(n + 2) {
-    gap: 0;
-  }
-  .container-menu > * {
-    width: 100%;
-    margin-bottom: 30px;
-    padding-bottom: 15px;
-  }
+  /* ... */
 }
