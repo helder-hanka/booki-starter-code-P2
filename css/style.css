@@ -17,6 +17,8 @@
 body {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .main-container {
@@ -158,12 +160,14 @@ label {
 }
 .hebergements .card img {
   width: 100%;
-  /* height: 110px; */
   border-radius: 20px 20px 0 0;
 }
-.hebergements h2 {
-  margin: 30px 0;
+.hebergements h3 {
+  margin-top: 33px;
   font-size: 18px;
+}
+.hebergements .section-title {
+  margin-bottom: 33px;
 }
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -289,8 +293,10 @@ label {
   width: 24%;
 }
 .activites h4 {
-  padding: 10px;
-  margin: auto;
+  /* padding: 10px;
+  margin: auto; */
+  /* margin: revert; */
+  padding-left: 4px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
