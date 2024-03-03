@@ -89,7 +89,7 @@ a {
 .container-menu a:hover {
   border-top: 4px solid var(--main-color);
   color: var(--main-color);
-  padding-top: 26px;
+  padding-top: 18px;
 }
 
 /****** search ***********/
@@ -353,5 +353,34 @@ label {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  .main-container {
+    padding: 0;
+  }
+  .container-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-menu {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+  }
+  .container-menu div:nth-child(n + 1) {
+    width: 100%;
+    border-bottom: 2px solid var(--grey-tin2-color);
+    padding-bottom: 10px;
+  }
+  .container-menu div:nth-child(n + 1):hover {
+    border-bottom: 2px solid var(--main-color);
+  }
+  .container-menu:nth-child(n + 2) {
+    gap: 0;
+  }
+  .container-menu a:hover {
+    border-top: none;
+    color: var(--main-color);
+    padding-top: 0;
+  }
 }
