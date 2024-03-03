@@ -383,4 +383,9 @@ label {
     color: var(--main-color);
     padding-top: 0;
   }
+  .footer-container {
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+  }
 }
