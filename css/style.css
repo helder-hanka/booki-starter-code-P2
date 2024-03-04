@@ -8,6 +8,7 @@
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
   --grey-tin2-color: #d9d9d9;
+  --black-color: #000000;
 }
 
 .fa-solid {
@@ -127,6 +128,12 @@ button {
 .search-form button,
 label {
   padding: 14px 16px;
+}
+.fa-location-dot {
+  color: var(--black-color);
+}
+.fa-magnifying-glass {
+  display: none;
 }
 /****** filter ***********/
 .filter-form {
@@ -293,9 +300,6 @@ label {
   width: 24%;
 }
 .activites h4 {
-  /* padding: 10px;
-  margin: auto; */
-  /* margin: revert; */
   padding-left: 4px;
 }
 
@@ -394,5 +398,16 @@ label {
     padding-right: 20px;
     padding-left: 20px;
     align-items: center;
+  }
+  .search-form button span {
+    display: none;
+  }
+  .fa-magnifying-glass {
+    display: block;
+    color: var(--filter-bg-color);
+    font-size: 25px;
+  }
+  .search-form button {
+    border-radius: 15px 15px 15px 15px;
   }
 }
