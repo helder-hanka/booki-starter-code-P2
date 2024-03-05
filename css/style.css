@@ -428,4 +428,7 @@ label {
   .hebergements-and-populaires .hebergements {
     background-color: white;
   }
+  .populaires {
+    margin-top: 0;
+  }
 }
