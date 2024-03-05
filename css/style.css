@@ -422,4 +422,7 @@ label {
   .hebergements-and-populaires {
     flex-direction: column-reverse;
   }
+  .hebergements-and-populaires section {
+    background-color: white;
+  }
 }
