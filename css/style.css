@@ -419,4 +419,7 @@ label {
   .populaires-cards a {
     width: auto;
   }
+  .hebergements-and-populaires {
+    flex-direction: column-reverse;
+  }
 }
