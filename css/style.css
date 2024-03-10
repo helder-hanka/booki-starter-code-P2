@@ -112,7 +112,7 @@ a {
 }
 .search-form input {
   width: 100%;
-  text-align: center;
+  padding-left: 24px;
 }
 .search-form input,
 span {
@@ -209,9 +209,7 @@ label {
   justify-content: center;
   align-items: center;
   margin-right: 10px;
-}
-.info div i {
-  align-self: center;
+  flex-shrink: 0;
 }
 .search-container,
 .filter-container,
@@ -435,5 +433,8 @@ label {
   }
   .hebergements .populaires-cards .card {
     height: auto;
+  }
+  .search-form {
+    width: 100%;
   }
 }
