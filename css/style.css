@@ -209,9 +209,7 @@ label {
   justify-content: center;
   align-items: center;
   margin-right: 10px;
-}
-.info div i {
-  align-self: center;
+  flex-shrink: 0;
 }
 .search-container,
 .filter-container,
